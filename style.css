@@ -30,7 +30,10 @@ main {}
     padding: 20px;
     margin-top: 20px;
 }
-
+.nav-container h2{
+    font-size: 40px;
+    color: tomato;
+}
 .nav-link-container {
     display: flex;
 
@@ -82,58 +85,142 @@ main {}
 
 /* banner start */
 
-.banner-container {
+.banner-main-section{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.banner-title {
+.banner-titles{
     width: 50%;
-
+  
 }
-
-.banner-title h1 {
-    font-size: 80px;
+ 
+.banner-titles h1{
+    font-size: 70px;
     font-weight: 800;
 }
+.banner-titles p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.img-conatiner{
+position: relative;
+margin-right: 60px;
+}
+.offer-btn{
+    position: absolute;
+    top:210px;
+    left: 205px;
+   
+    width: 40%;
+    border-radius: 5px;
+    padding: 12px;
+   
+    background-color: rgba(186, 186, 144, 0.216);
+}
+.offer-btn2 p{
+   margin-left:20px;
+   text-align: center;
+}
+.offer-btn2{
+    position: absolute;
+    top:450px;
+    left: 40px;
+    width: 40%;
+    border-radius: 5px;
+    padding: 12px;
+    background-color: rgba(186, 186, 144, 0.216);
+}
+.img-conatiner img{
+width: 100%;
 
-.parymar-btn {
-    font-size: 20px;
-    padding: 18px;
-    border-radius: 20px;
+}
+.fa-solid{
+    color: rgba(230, 83, 60, 1) ;
+}
+.btn-banner{
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 10px;
     border: none;
     color: white;
-    background-color: tomato;
-    margin-top: 20px;
+    background-color: rgba(230, 83, 60, 1) ;
 }
-
-.parymar-btn2 {
-    font-size: 20px;
-    padding: 18px;
+.btn-banner1{
+    margin-top: 20px;
+    padding: 25px;
     border-radius: 20px;
+   border: 1px solid;
     color: white;
-
-    border: 2px solid;
-    background-color: black;
-    margin-top: 20px;
+    background: rgba(0,0,0,0.898);
 }
 
 
-.image-container {
-    position: relative;
+@media screen and (max-width:576px) {
+   
+    .banner-main-section{
+        flex-direction: column;
+    }
+ 
+.banner-titles h1{
+    font-size: 40px;
+    font-weight: 800;
 }
-
-.offer-btn {
-    position: absolute;
-    top: 280px;
-    right: 50px;
-
-}
-
-.offer-btn2 {
-    position: absolute;
-    bottom: 110px;
 }
 
 /* banner end */
+/* change-your- start */
+.change-your-container{
+    margin-top: 50px;
+    padding-bottom: 60px;
+}
+.change-title{
+    padding-bottom: 80px;
+}
+.change-title h2{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+.change-title p{
+    text-align: center;
+}
+.change-your-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: space-between;
+  text-align: center;
+  
+  
+}
+.change-card img{
+ border-radius: 50%;
+ 
+}
+.change-card h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+.change-card p{
+    color: rgb(156, 161, 161);
+}
+@media screen and (max-width: 576px) {
+    .change-your-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .change-title h2{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+.change-card p{
+    color: rgb(156, 161, 161);
+    font-size: 14px;
+    width: 50%;
+    margin: 0 auto;
+}
+}
+/* change-your- end */
